@@ -34,13 +34,13 @@ function startApp() {
             $("#linkLogin").show();
             $("#linkRegister").show();
             $("#linkListAds").hide();
-			            $("#linkCreateAd").hide();
+            $("#linkCreateAd").hide();
             $("#linkLogout").hide();
         } else {
             // We have logged in user
             $("#linkLogin").hide();
             $("#linkRegister").hide();
-            $("#linkListAds").show();			
+            $("#linkListAds").show();
             $("#linkCreateAd").show();
             $("#linkLogout").show();
         }
@@ -59,7 +59,7 @@ function startApp() {
         $('#formRegister').trigger('reset');
         showView('viewRegister');
     }
-	
+
 	function showCreateAdView() {
         $('#formCreateAd').trigger('reset');
         showView('viewCreateAd');
@@ -164,7 +164,7 @@ function startApp() {
                     );
 
                 for (let advert of adverts) {
-					                    let links = [];
+                    let links = [];
 
                     if (advert._acl.creator == sessionStorage['userId']) {
                         let deleteLink = $(`<a data-id="${advert._id}" href="#">[Delete]</a>`)
@@ -187,8 +187,8 @@ function startApp() {
             }
         }
     }
-	
-	// advertisement/create
+
+    // advertisement/create
     function createAdvert() {
         const kinveyAuthHeaders = {
             'Authorization': "Kinvey " + sessionStorage.getItem('authToken'),
