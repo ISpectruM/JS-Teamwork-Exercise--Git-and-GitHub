@@ -78,50 +78,7 @@ function startApp() {
             showHideMenuLinks();
             listAdverts();
         }
-        // advertisement/all
-        function listAdverts() {
-            $('#ads').empty();
-            showView('viewAds');
-
-            const kinveyAdvertsUrl = kinveyBaseUrl + "appdata/" + kinveyAppKey + "/adverts";
-            const kinveyAuthHeaders = {
-                'Authorization': "Kinvey " + sessionStorage.getItem('authToken'),
-            };
-            $.ajax({
-                method: "GET",
-                url: kinveyAdvertsUrl,
-                headers: kinveyAuthHeaders,
-                success: loadAdvertsSuccess
-            });
-
-            function loadAdvertsSuccess(adverts) {
-                if (adverts.length === 0) {
-                    $('#ads').text('No advertisements available.');
-                } else {
-                    let advertsTable = $('<table>')
-                        .append($('<tr>').append(
-                            '<th>Title</th>',
-                            '<th>Publisher</th>',
-                            '<th>Date Published</th>',
-                            '<th>Price</th>')
-                        );
-
-                    for (let advert of adverts) {
-                        advertsTable.append($('<tr>').append(
-                            $('<td>').text(advert.title),
-                            $('<td>').text(advert.publisher),
-                            $('<td>').text(advert.datePublished),
-                            $('<td>').text(advert.price)
-                        ));
-                    }
-
-                    $('#ads').append(advertsTable);
-                }
-            }
-        }
     }
-
-}
 
     function saveAuthInSession(userInfo) {
         let userAuth = userInfo._kmd.authtoken;
@@ -132,9 +89,9 @@ function startApp() {
 
     // user/register
     function registerUser() {
-        const kinveyRegisterUrl = "https://mock.backend.com/user/kid_rk/";
+        const kinveyRegisterUrl = kinveyBaseUrl + "user/" + kinveyAppKey + "/";
         const kinveyAuthHeaders = {
-            'Authorization': "Basic " + btoa("kid_rk:736804a668"),
+            'Authorization': "Basic " + btoa(kinveyAppKey + ":" + kinveyAppSecret),
         };
 
         let userData = {
@@ -154,7 +111,7 @@ function startApp() {
             console.log(userInfo);
             saveAuthInSession(userInfo);
             showHideMenuLinks();
-            showHomeView();
+            listAdverts();
         }
     }
 
@@ -164,5 +121,47 @@ function startApp() {
         $('#loggedInUser').text("");
         showHideMenuLinks();
         showHomeView();
+    }
+
+    // advertisement/all
+    function listAdverts() {
+        $('#ads').empty();
+        showView('viewAds');
+
+        const kinveyAdvertsUrl = kinveyBaseUrl + "appdata/" + kinveyAppKey + "/adverts";
+        const kinveyAuthHeaders = {
+            'Authorization': "Kinvey " + sessionStorage.getItem('authToken'),
+        };
+        $.ajax({
+            method: "GET",
+            url: kinveyAdvertsUrl,
+            headers: kinveyAuthHeaders,
+            success: loadAdvertsSuccess
+        });
+
+        function loadAdvertsSuccess(adverts) {
+            if (adverts.length === 0) {
+                $('#ads').text('No advertisements available.');
+            } else {
+                let advertsTable = $('<table>')
+                    .append($('<tr>').append(
+                        '<th>Title</th>',
+                        '<th>Publisher</th>',
+                        '<th>Date Published</th>',
+                        '<th>Price</th>')
+                    );
+
+                for (let advert of adverts) {
+                    advertsTable.append($('<tr>').append(
+                        $('<td>').text(advert.title),
+                        $('<td>').text(advert.publisher),
+                        $('<td>').text(advert.datePublished),
+                        $('<td>').text(advert.price)
+                    ));
+                }
+
+                $('#ads').append(advertsTable);
+            }
+        }
     }
 }
