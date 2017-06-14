@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="327011c0-1a1f-4e7b-ad2b-ab685df4c0c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/a_GitAndGithub/static/fuze-f1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/JSTeamwork-Exercise_GitAndGithub.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/JSTeamwork-Exercises.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/a_GitAndGithub/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/a_GitAndGithub/scripts/api.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/a_GitAndGithub/scripts/jquery-3.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/a_GitAndGithub/scripts/jquery.mockjax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/a_GitAndGithub/scripts/prodavachnik.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/a_GitAndGithub/styles/prodavachnik.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/JSTeamwork-Exercise_GitAndGithub.iml" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/JSTeamwork-Exercise_GitAndGithub.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="../JSTeamwork-Exercises/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +48,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -92,17 +81,34 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="JSTeamwork-Exercises">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="a_GitAndGithub">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.vagrant" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JSTeamwork-Exercises" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JSTeamwork-Exercises/.idea" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -189,6 +195,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Iv\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="327011c0-1a1f-4e7b-ad2b-ab685df4c0c7" name="Default" comment="" />
@@ -196,12 +205,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497364548651</updated>
-      <workItem from="1497364550348" duration="1053000" />
+      <workItem from="1497364550348" duration="2045000" />
     </task>
+    <task id="LOCAL-00001" summary="Git And Github exercise - initial commit">
+      <created>1497369710252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497369710252</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1053000" />
+    <option name="totallyTimeSpent" value="2045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -229,6 +246,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Git And Github exercise - initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Git And Github exercise - initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
