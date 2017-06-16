@@ -64,6 +64,7 @@
                 <tr>
                     <th>Title</th>
                     <th>Publisher</th>
+                    <th>Description</th>
                     <th>Price</th>
                     <th>Date Published</th>
                     <th>Actions</th>
@@ -71,9 +72,11 @@
                 <tr>
                     <td>Ad title</td>
                     <td>Ad author</td>
+                    <td>Ad description</td>
                     <td>Price</td>
                     <td>Date published</td>
                     <td>
+                        <a href="#">[Read more]</a>
                         <a href="#">[Delete]</a>
                         <a href="#">[Edit]</a>
                     </td>
@@ -82,11 +85,16 @@
         </div>
     </section>
 
+    <section id="viewDetailsAd" class="viewDetailsAd">
+    </section>
+
     <section id="viewCreateAd" class="viewCreateAd">
         <h1 class="titleForm">Create new Advertisement</h1>
         <form id="formCreateAd" class="form">
             <div>Title:</div>
             <div><input type="text" name="title" required /></div>
+            <div>Description:</div>
+            <div><textarea name="description" rows="10" required></textarea></div>
             <div>Date Published:</div>
             <div><input type="date" name="datePublished" required /></div>
             <div>Price:</div>
@@ -102,6 +110,8 @@
             <div><input type="hidden" name="publisher" required /></div>
             <div>Title:</div>
             <div><input type="text" name="title" required /></div>
+            <div>Description:</div>
+            <div><textarea name="description" rows="10" required></textarea></div>
             <div>Date Published:</div>
             <div><input type="date" name="datePublished" required /></div>
             <div>Price:</div>
